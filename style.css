@@ -1,6 +1,6 @@
 :root {
 	--paper: #f3efe2;
-	--paper-dark: #aeaaa1;
+	--paper-dark: #c0bdb7;
 	--card: #fbf9f2;
 	--ink: #1e2a38;
 	--ink-soft: #4c5a6e;
@@ -433,7 +433,12 @@ section {
 
 .example {
 	background-color: white;
-	padding: 2em 4em;
+	padding: 2em;
+}
+
+.example-wrapper {
+	border: solid var(--blue) 2px;
+	padding: 2em;
 }
 
 .example .profile {
@@ -458,7 +463,7 @@ section {
 .post {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 24px;
+	column-gap: 1em;
 	align-items: center;
 }
 @media (max-width: 800px) {
