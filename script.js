@@ -3,43 +3,43 @@ const scenarios = [
 		tag: "Milestone post",
 		text: "\u201cThrilled to announce I'm joining [Company] this fall — grateful to everyone who supported me along the way.\u201d",
 		verdict: "ok",
-		title: "Reads as appropriate",
-		body: "This hits three of the four rules at once: it's career-relevant, polished, and shares credit with mentors instead of centering the poster alone. Participants called this the \u201cstereotypical\u201d LinkedIn post — common enough to feel almost scripted, but safe.",
+		title: "Reads as professional",
+		body: "This hits three of the four rules at once: it's career-relevant, polished, and shares credit with mentors instead of centering the poster alone. This could be called the \u201cstereotypical\u201d LinkedIn post — common enough to feel almost scripted, but safe and professional while avoiding any risks.",
 	},
 	{
 		tag: "Personal reflection",
 		text: "\u201cI just went through a breakup, and here's what it taught me about resilience.\u201d",
 		verdict: "risky",
-		title: "Feels too personal — but it depends",
-		body: "Participants flagged posts like this as risky by default, because the topic isn't obviously career-related. But the same story could \u201cpass\u201d if it clearly translated the experience into a professional lesson — the emotional content alone isn't the problem; disconnection from work is.",
+		title: "May be too personal — but it depends",
+		body: "Posts about personal experiences, such as relationships, are often considered risky by default. The topic isn't obviously career-related, but the same story could be considered professional if it clearly translates the experience into a professional lesson. Here, we can see the emotional content alone isn't the problem, but rather the disconnection from work is.",
 	},
 	{
 		tag: "Test score",
 		text: "\u201cProud to share I scored a 1560 on my SAT!\u201d",
 		verdict: "risky",
-		title: "Reads as oversharing",
-		body: "One participant called this \u201cpretty personal\u201d — not because it's emotional, but because it felt unnecessary to disclose publicly and didn't offer value to anyone else reading it. Usefulness to the audience matters as much as the topic itself.",
+		title: "Reads as unprofessional",
+		body: "This is an example of a post that could be considered 'too personal' and not 'professional' enough. While the post content isn't emotional, information about your personal achievements or exam scores feel unnecessary. Even moreso, it doesn't really offer value to anyone else reading it. Usefulness to the audience matters as much as the topic itself. Some ways to improve this post would be to focus on what you can share with the audience (study tips? lessons learned?) as well as making sure you are seen as humble even while you highlight your achivements.",
 	},
 	{
 		tag: "Career advice",
 		text: "\u201c3 things I wish I knew before my first internship.\u201d",
 		verdict: "ok",
-		title: "Reads as appropriate",
-		body: "This is the clearest \u201cuseful\u201d post: it's framed entirely around helping other people, which participants consistently rewarded. Even personal missteps become acceptable once they're repackaged as a lesson for the reader.",
+		title: "Reads as professional",
+		body: "This post provides a clear \u201cusefulness\u201d to its readers: it's framed entirely around helping other people, which was consistently considered as professional behavior. Even personal missteps become acceptable once they're repackaged as a lesson for the reader. Even better, it could be seen as genuine as you share your own hardships and failures.",
 	},
 	{
 		tag: "Casual life update",
 		text: "\u201cJust adopted a puppy \ud83d\udc36 best day ever!\u201d",
 		verdict: "risky",
 		title: "Feels out of place",
-		body: "Not embarrassing or sensitive — just off-topic. Several participants said LinkedIn should stay strictly \u201cpurpose-driven,\u201d and content with zero professional relevance, even happy content, can read as not knowing the room.",
+		body: "This is a post that isn't really embarrassing or sensitive, however, on LinkedIn, where most people are focused on professional communication, this could just feel off-topic. It is often recommended to make sure your LinkedIn content stays professionally relevant, and content with zero professional relevance, even happy content, can read as not knowing the room.",
 	},
 	{
 		tag: "Vulnerable failure story",
 		text: "\u201cI got rejected from 40 internships before landing this one. Here's what changed.\u201d",
 		verdict: "ok",
-		title: "Reads as appropriate",
-		body: "This is the study's key finding in miniature: a vulnerable, even embarrassing topic becomes acceptable the moment it's framed as useful and tied to a career narrative. \u201cToo personal\u201d isn't about the topic — it's about whether the disclosure earns its place.",
+		title: "Reads as professional",
+		body: "This is a vulnerable, even embarrassing story to share. Quantifying your failures and owning up to it is a show of your shortsomings. However, in the LinkedIn environment, this becomes acceptable as it gets framed as useful and tied to a career narrative. \u201cToo personal\u201d isn't about the topic — it's about whether the disclosure earns its place.",
 	},
 ];
 
@@ -74,7 +74,8 @@ scenarios.forEach((s, i) => {
 		document.querySelectorAll(".scenario").forEach((c) => c.classList.remove("selected"));
 		el.classList.add("selected");
 		const badgeClass = s.verdict === "ok" ? "ok" : "risky";
-		const badgeText = s.verdict === "ok" ? "\u2713 Generally reads OK" : "\u26a0 Reads as risky";
+		const badgeText =
+			s.verdict === "ok" ? "\u2713 Reads Professional" : "\u26a0 Could be Too Personal";
 		panel.innerHTML = `<span class="verdict-badge ${badgeClass}">${badgeText}</span>
         <h4 style="margin:6px 0 8px;">${s.title}</h4>
         <p style="margin-bottom:0; color:var(--ink-soft);">${s.body}</p>`;

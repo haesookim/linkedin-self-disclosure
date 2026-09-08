@@ -30,6 +30,16 @@ body {
 	background-image: radial-gradient(circle at 1px 1px, rgba(30, 42, 56, 0.05) 1px, transparent 0);
 	background-size: 22px 22px;
 }
+
+li {
+	font-family: "Inter", sans-serif;
+	color: var(--ink);
+}
+
+li strong {
+	font-family: "Fraunces", serif;
+	color: var(--blue);
+}
 h1,
 h2,
 h3,
@@ -433,7 +443,8 @@ section {
 
 .example {
 	background-color: white;
-	padding: 2em;
+	/* padding: 2em; */
+	box-shadow: 5px 5px 5px var(--paper-dark);
 }
 
 .example-wrapper {
@@ -445,6 +456,7 @@ section {
 	display: flex;
 	gap: 16px;
 	margin-bottom: 10px;
+	font-weight: 600;
 }
 
 #example-photo {
@@ -463,7 +475,7 @@ section {
 .post {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 1em;
+	column-gap: 3em;
 	align-items: center;
 }
 @media (max-width: 800px) {
