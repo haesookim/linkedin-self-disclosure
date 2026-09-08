@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Using Chatbots to Teach Upstanding Behavior | Cornell Social Media Lab</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=Oregano&family=Space+Mono:wght@400;700&display=swap"
+			rel="stylesheet" />
+		<link href="./style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<nav>
+			<div class="wrap">
+				<div class="brand">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+						<rect
+							x="2"
+							y="7"
+							width="26"
+							height="17"
+							rx="2"
+							stroke="#1E2A38"
+							stroke-width="2"
+							fill="#F2C94C" />
+						<circle cx="9" cy="15.5" r="3" stroke="#1E2A38" stroke-width="1.6" fill="#F3EFE2" />
+						<line x1="15" y1="12" x2="24" y2="12" stroke="#1E2A38" stroke-width="1.6" />
+						<line x1="15" y1="16" x2="22" y2="16" stroke="#1E2A38" stroke-width="1.6" />
+					</svg>
+					DALi
+				</div>
+				<!-- <ul>
+					<li><a href="#background">Background: LinkedIn</a></li>
+					<li><a href="#study">Our Study</a></li>
+					<li><a href="#rules">Professional vs. Personal</a></li>
+					<li><a href="#model">Norm Formation Model</a></li>
+					<li><a href="#tryit">Try It</a></li>
+					<li><a href="#resources">Resources</a></li>
+				</ul> -->
+			</div>
+		</nav>
+
+		<!-- ============ HERO ============ -->
+		<header class="hero wrap">
+			<div id="top">
+				<h1>
+					How can we use <em>Conversational Agents</em> to help bystanders intervene in
+					cyberbullying situations?
+				</h1>
+				<p class="hero-sub">
+					Cyberbullying is one of the most resilient and yet common examples of online toxicity. A
+					cruel comment thread, people piling on for a 'transgression', publicly sharing embarrasing
+					or humiliating photos, you name it. It affects numerous individuals, especially teens and
+					young adults, and can have lasting impacts on mental health and well-being.
+
+					<br />
+					<br />
+					Bystander intervention, or <em>upstanding</em>, is a particularly significant way of
+					addressing this. When someone publicly stands up for a cyberbullying victim, it has the
+					twofold effect of providing emotional support to the victim, while publicly calling out
+					and discouraging the bully's behavior. It can even encourage others to join in, moving out
+					from the silent majority and taking action.
+					<br />
+					<br />
+					However, as effective as upstanding can be, it is still a rare and challenging way of
+					action.
+					<br />
+					<br />
+					We at the Cornell Social Media Lab tasked ourselves with this question: what stops people
+					from upstanding, and how can conversational agents help people to overcome these barriers?
+				</p>
+				<!-- <div class="hero-meta">
+					<div><strong>20</strong>students interviewed</div>
+					<div><strong>45–60min</strong>per conversation</div>
+				</div> -->
+				<!-- <div class="cta-row">
+					<a href="#study" class="btn btn-primary">Read the plain-language version ↓</a>
+					<a href="#tryit" class="btn btn-secondary">Try the "too personal?" quiz</a>
+				</div> -->
+			</div>
+
+			<!-- <div class="hero-art">
+				<div class="bcard-wrap">
+					<div class="tape"></div>
+				</div>
+			</div> -->
+		</header>
+
+		<!-- ============ THE STUDY ============ -->
+		<section id="background">
+			<div class="wrap">
+				<div class="section-head">
+					<span class="kicker">00 — The Background</span>
+					<h2>What stops bystanders from becoming upstanders?</h2>
+					<p>
+						While bystander intervention is an effective way to address emergencies and and
+						cyberbullying situations, it is often challenging to get to engage. The presence of
+						others is cited as a common reason that discourages individuals from taking action. This
+						is referred to as <em>the bystander effect</em>. However, the bystander effect is not
+						the only reason why bystanders might hesitate to intervene.
+					</p>
+
+					<p>
+						The bystander intervention model (BIM) describes intervention as a five-step mental
+						process.
+					</p>
+				</div>
+
+				<div class="flow">
+					<div class="stage">
+						<span class="stepnum">1</span>
+						<p>Notice a situation</p>
+					</div>
+					<div class="stage">
+						<span class="stepnum">2</span>
+						<p>Interpreting the sitaution as an emergency</p>
+					</div>
+					<div class="stage">
+						<span class="stepnum">3</span>
+						<p>Assuming the responsibility to take action</p>
+					</div>
+					<div class="stage">
+						<span class="stepnum">4</span>
+						<p>Deciding how to intervene</p>
+					</div>
+					<div class="stage">
+						<span class="stepnum">5</span>
+						<p>Taking action</p>
+					</div>
+				</div>
+
+				<div class="section-head">
+					<p>
+						One thing to note is that bystanders face challenges in every step of the way. They may
+						fail to recognize a situation is cyberbullying, be unaware of the methods that they can
+						use to upstand, or potential consequences or repercussions might stop them from taking
+						action. Upstanding is <em>hard</em>: which made it all the more important for us to seek
+						out methods to make this easier.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="study" class="model-section">
+			<div class="wrap">
+				<div class="section-head">
+					<span class="kicker">01 — The potential </span>
+					<h2>How can conversational agents help?</h2>
+					<p></p>
+					<p>
+						We named this model as <em>collaborative upstanding</em>: approaching upstanding as a
+						socially supported, collaborative process. This could be with a human partner, or an AI
+						agent. Traditional perspectives on bystander intervention focused on how an individual
+						might go through the process of upstanding. We instead turned our heards to how social
+						support can transform this process.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ FOUR RULES ============ -->
+		<section id="rules">
+			<div class="wrap">
+				<div class="section-head" style="margin-bottom: 0">
+					<span class="kicker">02 — What can collaborative upstanding help with?</span>
+					<h2>Learning from human-human collaborative upstanding</h2>
+					<p>
+						We first started off by exploring how a collaborative upstanding process might work. To
+						achieve this, we conducted a paired role-play study. Participants were paired up, and
+						randomly assigned to 'co-pilot' or 'bystander' roles.
+					</p>
+				</div>
+
+				<div class="section-head" style="margin-bottom: 0">
+					<h3>A challenge of 'how-to' intervene</h3>
+					<p>What we found was that often, the question of 'how to' intervene stopped bystanders. Bystanders understood the importance of upstanding, and would understand and accept when the co-pilot participants suggested that they upstand. However, actually writing messages were difficult.</p>
+				</div>
+				<div class="flow">
+					<div class="stage">
+						<span class="stepnum">1</span>
+						<p>Notice a situation</p>
+					</div>
+					<div class="stage">
+						<span class="stepnum">2</span>
+						<p>Interpreting the sitaution as an emergency</p>
+					</div>
+					<div class="stage">
+						<span class="stepnum">3</span>
+						<p>Assuming the responsibility to take action</p>
+					</div>
+					<div class="stage highlight">
+						<span class="stepnum">4</span>
+						<p>Deciding how to intervene</p>
+					</div>
+					<div class="stage">
+						<span class="stepnum">5</span>
+						<p>Taking action</p>
+					</div>
+				</div>
+
+				<div class="section-head" style="margin-bottom: 0">
+			
+					<p>Moreover, these how-to barriers even brought back previous concerns that may have been addressed previously. Even though they had agreed that they should take action, they started expressing doubt over whether they should get involved at all.</p>
+				</div>
+
+				<div class="chatmock">
+				<div class="chatlabel">
+					Example of bystander withdrawing after facing how-to challenges
+				</div>
+				<div class="bubble bystander">
+					<span class="who">Bystander</span>What should I say in support?
+				</div>
+				<div class="bubble copilot">
+					<span class="who">Co-pilot</span>Maybe you can call out some of her friends for acting in this way, like responding to Amy’s comment asking why she was cropped out.
+				</div>
+				<div class="bubble bystander">
+					<span class="who">Bystander</span>But why would I get unnecessarily involved if I'm not close to her, and publicly too?
+				</div>
+			</div>
+
+			<div class="section-head" style="margin-bottom: 0">
+				<h3>What collaborative upstanding strategies could help overcome these barriers?</h3>
+				<p>However, some conversational strategies could be used to help bystanders overcome these barriers and concerns, and bring them back into action. Some of the strategies our co-pilots used: </p>
+			</div>
+
+			<div class="barrier-grid">
+				<div class="card">
+					<span class="icon">💬</span>
+					<h3>Asking probing questions</h3>
+					<p>
+						Questions like "what do you think is happening here?" can get bystanders thinking for themselves
+						instead of just accepting instructions.
+					</p>
+				</div>
+				<div class="card">
+					<span class="icon">🔍</span>
+					<h3>Helping interpret the situation</h3>
+					<p>
+						Co-pilots could point out details in the cyberbullying situation to help bystanders interpret the situation as a cyberbullying context that warranted intervention.
+					</p>
+				</div>
+				<div class="card">
+					<span class="icon">🫂</span>
+					<h3>Validating bystander concerns.</h3>
+					<p>
+						When bystanders expressed concerns, co-pilots could work on establishing a rapport by listening and empathizing with their perspectives, making their future efforts of persuasion more effective.
+					</p>
+				</div>
+				<div class="card">
+					<span class="icon">🔮</span>
+					<h3>Speculating on potential consequences.</h3>
+					<p>
+						Co-pilots suggested potential repercussions that could occur from bystanders' actions. Importantly, they noted that staying quiet also has consequences when they reframed inaction as a choice, not a neutral default.
+					</p>
+				</div>
+				<div class="card">
+					<span class="icon">↩️</span>
+					<h3>Suggesting alternative goals</h3>
+					<p>
+						If a bystander does not agree with a specific goal that upstanding may achieve, the co-pilot could suggest alternative reasons why intervening would help, to help them reframe the task.
+					</p>
+				</div>
+				<div class="card">
+					<span class="icon">🪜</span>
+					<h3>Suggesting smaller interventions</h3>
+					<p>
+						Asking someone to commit to a tiny step first, like flagging a post, could make larger interventions such as commenting feel easier and less daunting.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ THE MODEL (diagram) ============ -->
+		<section id="model" class="model-section">
+			<div class="wrap">
+				<div class="section-head">
+					<span class="kicker">03 — ConCUR development</span>
+					<h2>Building a how-to first model of collaborative upstanding</h2>
+					<p>
+						Armed with these insights, we built ConCUR (short for Conversational Collaborative Upstanding in Real-time), a prototype chatbot that utilized a how-to first approach.
+					</p>
+					
+				</div>
+
+				<div class="split">
+				<div class="col rust-edge">
+					<h3>Traditional model (BIM)</h3>
+					<p>Build empathy and a sense of responsibility first.</p>
+					<p>Hope the person eventually figures out the right words on their own.</p>
+					<p>
+						Treat "deciding to care" and "knowing how to act" as two separate problems, solved in
+						order.
+					</p>
+				</div>
+				<div class="col teal-edge">
+					<h3>How-to first model (ConCUR)</h3>
+					<p>Ask the person to start drafting a message immediately.</p>
+					<p>
+						Let doubts about motivation, safety, and effectiveness surface naturally through that
+						writing process.
+					</p>
+					<p>Address all of those doubts together, as they come up, instead of one at a time.</p>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<!-- ============ RESOURCES / FOOTER ============ -->
+		<footer id="resources">
+			<div class="wrap">
+				<div class="foot-grid">
+					<div>
+						<!-- <h3>Social Media Lab Notes</h3>
+						<p style="color: #c9d2de; max-width: 40ch">
+							Plain-language write-ups of research on how people present themselves online — made
+							for students, educators, and the LinkedIn-curious.
+						</p> -->
+						<div class="cta-row">
+							<a
+								href="#top"
+								class="btn"
+								style="background: var(--yellow); border-color: var(--yellow); color: var(--ink)"
+								>Back to top</a
+							>
+						</div>
+					</div>
+					<!-- <div>
+						<h3 style="font-size: 1rem">More social media literacy</h3>
+						<ul class="foot-list">
+							<li>What "imagined audiences" means online</li>
+							<li>Why authenticity isn't the same as oversharing</li>
+							<li>How platforms shape what feels "normal" to post</li>
+							<li>Guides for talking to teens about social media</li>
+						</ul>
+					</div> -->
+					<div>
+						<h3 style="font-size: 1rem">About this study</h3>
+						<ul class="foot-list">
+							<li>
+								This study was supported by the NSF.
+							</li>
+							<!-- <li>Advised by Cornell Social Media Lab members Haesoo Kim and Natalie Bazarova.</li> -->
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="foot-bottom">
+					<span>Cornell Social Media Lab — research made readable.</span>
+					<span>Based on "I See LinkedIn as a Business Card" (2026)</span>
+				</div> -->
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
