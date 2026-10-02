@@ -532,6 +532,30 @@ section {
 	line-height: 1.5;
 	margin-bottom: 10px;
 }
+
+.explanation.bystander {
+	max-width: 82%;
+	padding: 0px 15px;
+	/* border-radius: 16px; */
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	font-family: "Oregano", cursive;
+	color: var(--red);
+}
+
+.explanation.copilot {
+	max-width: 82%;
+	padding: 0px 15px;
+	/* border-radius: 16px; */
+	font-size: 15px;
+	margin-left: auto;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	font-family: "Oregano", cursive;
+	color: var(--red);
+}
+
 .bubble.bystander {
 	background: var(--bubble-bystander);
 	color: var(--ink);
